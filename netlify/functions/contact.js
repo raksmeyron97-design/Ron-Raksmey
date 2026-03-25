@@ -147,12 +147,9 @@ exports.handler = async function (event) {
 
   // ── Forward to Telegram ──────────────────────────────────────────────────
   const BOT_TOKEN = "8587407080:AAE5AQ2zSy0UGiTG9t1wFbk40CXrNSXso4E";
-  
-  // ⚠️ URGENT: REPLACE THIS WITH YOUR NUMERIC CHAT ID!
-  // Example: const CHAT_ID = "123456789"; 
   const CHAT_ID = "7103087277"; 
 
-  if (!BOT_TOKEN || !CHAT_ID || CHAT_ID === "7103087277") {
+  if (!BOT_TOKEN || !CHAT_ID) {
     console.error("Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID");
     return {
       statusCode: 500,
