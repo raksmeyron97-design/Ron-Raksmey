@@ -1,0 +1,1421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#22ff6e" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ron Raksmey — Primary School Mathematics Educator specializing in modern teaching methodologies, Algebra, and Geometry."
+    />
+    <meta name="author" content="Ron Raksmey" />
+    <meta property="og:title" content="Ron Raksmey - Primary School Educator" />
+    <meta
+      property="og:description"
+      content="Future Primary School Teacher (12+4) based in Phnom Penh. Creating engaging and effective learning environments for young students."
+    />
+    <meta property="og:type" content="website" />
+    <!-- Fixed image URL to local path -->
+    <meta
+      property="og:image"
+      content="image/MyPF.jpg" 
+    />
+    <meta property="og:url" content="https://ron-raksmey.vercel.app" />
+    <link rel="canonical" href="https://ron-raksmey.vercel.app" />
+    <title>Ron Raksmey - Primary School Educator</title>
+    <!-- Keep this placeholder or link to your real photo -->
+    <link rel="icon" href="image/MyPF.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- Added custom styling for back to system button -->
+    <style>
+      .back-to-system {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--text-main);
+        text-decoration: none;
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        margin-right: 1.5rem;
+        border: 1px solid var(--border);
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+      .back-to-system:hover {
+        border-color: var(--neon);
+        color: var(--neon);
+        transform: translateY(-2px);
+      }
+      @media (max-width: 768px) {
+        .back-to-system span {
+          display: none;
+        }
+        .back-to-system {
+          padding: 6px 8px;
+          margin-right: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Skip to main content (accessibility) -->
+    <a href="#about" class="skip-link">Skip to main content</a>
+
+    <noscript>
+      <style>
+        section {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+      <div
+        style="
+          text-align: center;
+          padding: 1rem;
+          font-family: sans-serif;
+          background: #040f07;
+          color: #22ff6e;
+          font-size: 0.9rem;
+        "
+      >
+        Please enable JavaScript for the full experience.
+      </div>
+    </noscript>
+
+    <!-- ═══ SHARED SVG ICONS ═══ -->
+    <svg
+      style="display: none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <symbol
+          id="ico-mail"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+          <path d="m2 7 10 7 10-7" />
+        </symbol>
+        
+        <symbol id="ico-telegram" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.94z"/>
+        </symbol>
+
+        <symbol id="ico-facebook" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </symbol>
+
+        <symbol
+          id="ico-external"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+          <polyline points="15 3 21 3 21 9" />
+          <line x1="10" y1="14" x2="21" y2="3" />
+        </symbol>
+        <symbol
+          id="ico-code"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="16 18 22 12 16 6" />
+          <polyline points="8 6 2 12 8 18" />
+        </symbol>
+        <symbol
+          id="ico-up"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="18 15 12 9 6 15" />
+        </symbol>
+        <symbol
+          id="ico-send"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="22" y1="2" x2="11" y2="13" />
+          <polygon points="22 2 15 22 11 13 2 9 22 2" />
+        </symbol>
+        <symbol
+          id="ico-download"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </symbol>
+        <symbol
+          id="ico-search"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </symbol>
+        <symbol
+          id="ico-grad"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+          <path d="M6 12v5c3 3 9 3 12 0v-5" />
+        </symbol>
+        <symbol
+          id="ico-cert"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="8" r="6" />
+          <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+        </symbol>
+        <symbol
+          id="ico-check"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="20 6 9 17 4 12" />
+        </symbol>
+        <symbol
+          id="ico-moon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </symbol>
+        <symbol
+          id="ico-sun"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </symbol>
+        <symbol
+          id="ico-menu"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </symbol>
+        <symbol
+          id="ico-close"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </symbol>
+        <symbol
+          id="ico-paint"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M18.37 2.63 14 7l-1.59-1.59a2 2 0 0 0-2.82 0L8 7l9 9 1.59-1.59a2 2 0 0 0 0-2.82L17 10l4.37-4.37a2.12 2.12 0 1 0-3-3z"
+          />
+          <path d="M9 8c-2 3-4 3.5-7 4l8 10c2-1 6-5 6-7" />
+          <path d="M14.5 17.5 4.5 15" />
+        </symbol>
+        <symbol
+          id="ico-wrench"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+          />
+        </symbol>
+        <symbol
+          id="ico-bolt"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+        </symbol>
+        <symbol
+          id="ico-chat"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+          />
+        </symbol>
+        <symbol
+          id="ico-team"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+        </symbol>
+        <symbol
+          id="ico-clock"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <polyline points="12 6 12 12 16 14" />
+        </symbol>
+        <symbol
+          id="ico-target"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <circle cx="12" cy="12" r="6" />
+          <circle cx="12" cy="12" r="2" />
+        </symbol>
+        <symbol
+          id="ico-book"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+          <path
+            d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+          />
+        </symbol>
+        <symbol
+          id="ico-refresh"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="23 4 23 10 17 10" />
+          <polyline points="1 20 1 14 7 14" />
+          <path
+            d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+          />
+        </symbol>
+        <symbol
+          id="ico-chevron-left"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="15 18 9 12 15 6" />
+        </symbol>
+        <symbol
+          id="ico-chevron-right"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="9 18 15 12 9 6" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <!-- ═══ HEADER ═══ -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#" aria-label="Ron Raksmey - Home">
+            <svg
+              class="logo-badge"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <rect width="40" height="40" rx="11" fill="url(#lgGreen)" />
+              <text
+                x="50%"
+                y="54%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                font-family="monospace"
+                font-size="16"
+                font-weight="bold"
+                fill="#040f07"
+              >
+                ∑
+              </text>
+              <defs>
+                <linearGradient
+                  id="lgGreen"
+                  x1="0"
+                  y1="0"
+                  x2="40"
+                  y2="40"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stop-color="#22ff6e" />
+                  <stop offset="100%" stop-color="#0a9a40" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="logo-word">Ron Raksmey</span>
+          </a>
+        </div>
+
+        <ul class="nav-links" id="navLinks" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#journey">Journey</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Achievements</a></li>
+          <li><a href="#testimonials">References</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <!-- Added link back to PTEC Dashboard -->
+          <a href="index-1.html" class="back-to-system">
+            <svg style="width: 14px; height: 14px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6"/>
+            </svg>
+            <span>ប្រព័ន្ធ PTEC</span>
+          </a>
+
+          <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">
+            <svg id="themeIcon"><use href="#ico-moon" /></svg>
+          </button>
+          <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            <svg><use href="#ico-menu" /></svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ═══ AVAILABILITY BANNER ═══ -->
+    <div
+      class="avail-banner"
+      id="availBanner"
+      role="banner"
+      aria-label="Availability status"
+    >
+      <div class="avail-banner-inner">
+        <span class="avail-banner-dot" aria-hidden="true"></span>
+        <span class="avail-banner-text">
+          <strong>Actively seeking</strong> primary teaching roles
+          &nbsp;·&nbsp; Available
+          <strong>immediately</strong> &nbsp;·&nbsp; Open to remote &amp;
+          on-site
+        </span>
+        <a href="#contact" class="avail-banner-cta"
+          >Let's talk
+          <svg
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <line x1="3" y1="8" x2="13" y2="8" />
+            <polyline points="9 4 13 8 9 12" />
+          </svg>
+        </a>
+        <button
+          class="avail-banner-close"
+          id="bannerClose"
+          aria-label="Dismiss banner"
+        >
+          ×
+        </button>
+      </div>
+    </div>
+
+    <!-- ═══ HERO — two-column layout ═══ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="blob blob1" aria-hidden="true"></div>
+      <div class="blob blob2" aria-hidden="true"></div>
+      <div class="blob blob3" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <!-- LEFT — photo -->
+        <div class="hero-photo-col">
+          <div class="profile-wrap" title="Hi there! 👋">
+            <div class="profile-ring" aria-hidden="true"></div>
+            <div class="profile-glow" aria-hidden="true"></div>
+            <!-- Update this source to your real photo file in your project -->
+            <img
+              class="profile-img"
+              src="image/MyPF.jpg"
+              alt="Ron Raksmey - Mathematics Educator"
+              onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?w=400&h=400&fit=crop'"
+            />
+          </div>
+          <!-- floating code snippet decoration -->
+          <div class="hero-code-snippet" aria-hidden="true">
+            <span class="hcs-line"
+              ><span class="hcs-k">let</span> <span class="hcs-v">educator</span> =
+              <span class="hcs-s">"Ron Raksmey"</span>;</span
+            >
+            <span class="hcs-line"
+              ><span class="hcs-k">let</span>
+              <span class="hcs-v">level</span> =
+              <span class="hcs-s">"Primary School Teacher"</span>;</span
+            >
+          </div>
+        </div>
+
+        <!-- RIGHT — content -->
+        <div class="hero-content-col">
+          <div class="hero-badge">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            Available for Work &nbsp;·&nbsp; Phnom Penh, Cambodia
+          </div>
+
+          <h1>Hi, I'm <em>Ron Raksmey</em></h1>
+          <p class="hero-oneliner">
+            I apply modern teaching methodologies and a deep passion for education to create engaging and effective learning environments for primary school students.
+          </p>
+          <p class="tagline" aria-live="polite">
+            <span id="typingText">Future Primary School Teacher (12+4)</span><span class="cursor" aria-hidden="true"></span>
+          </p>
+
+          <!-- Stats row -->
+          <div class="hero-stats" aria-label="Quick stats">
+            <div class="hs-item">
+              <span class="hs-num">3.79</span>
+              <span class="hs-label">GPA @ RUPP</span>
+            </div>
+            <div class="hs-divider" aria-hidden="true"></div>
+            <div class="hs-item">
+              <span class="hs-num">A</span>
+              <span class="hs-label">Grade BacII</span>
+            </div>
+            <div class="hs-divider" aria-hidden="true"></div>
+            <div class="hs-item">
+              <span class="hs-num">2</span>
+              <span class="hs-label">Dual Degrees</span>
+            </div>
+          </div>
+
+          <div class="hero-btns">
+            <a href="#contact" class="btn btn-warm"
+              ><svg><use href="#ico-mail" /></svg> Get In Touch</a
+            >
+            <a href="#projects" class="btn btn-out"
+              ><svg><use href="#ico-book" /></svg> View Achievements</a
+            >
+            <!-- Update the download link to point to your new CV -->
+            <a href="/CV_Ron_Raksmey.pdf" class="btn btn-ghost" download
+              ><svg><use href="#ico-download" /></svg> Resume</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about">
+      <div class="si">
+        <div class="sh">
+          <span class="s-label">// Who I Am</span><br />
+          <h2 class="s-title">
+            About Me
+            <svg
+              class="squig"
+              viewBox="0 0 200 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 10 C35 3, 65 14, 100 7 S165 2, 198 9"
+                stroke="#22ff6e"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- LEFT col: two equal cards stacked -->
+          <div class="about-cards-col">
+            <div class="card about-card">
+              <h3>Hello! I'm Ron Raksmey</h3>
+              <p>
+                I am an aspiring and enthusiastic educator, currently serving as a Year 2 Student Teacher (គរុនិស្សិត) in primary education (12+4 system) and pursuing a Bachelor of Mathematics in Year 3. I am deeply passionate about making foundational learning and mathematics accessible and enjoyable for primary school students.
+              </p>
+              <p>
+                My approach to teaching blends theoretical knowledge with modern tools like AI, LaTeX, and Canva to simplify complex concepts. I strongly believe in creating personalized learning plans that help young learners build confidence and improve their overall academic performance from an early age.
+              </p>
+              <p>
+                I am preparing to officially become a Bachelor-level primary school teacher in 2028, and I am actively seeking roles where I can contribute to student growth and early academic excellence.
+              </p>
+              <p style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border);">
+                <strong>Purpose of this Website:</strong> This portfolio was created to serve as a digital showcase of my academic journey, to share my teaching methodologies, and to document my professional development and achievements in the field of education.
+              </p>
+            </div>
+
+            <div class="edu card">
+              <div class="edu-head">
+                <svg
+                  stroke="#22ff6e"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="width: 20px; height: 20px"
+                >
+                  <use href="#ico-grad" />
+                </svg>
+                <h4>Education</h4>
+              </div>
+              <div style="margin-bottom: 1rem;">
+                <p><strong><a href="https://www.ptec.edu.kh/home/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Phnom Penh Teacher Education College</a></strong></p>
+                <p>Student Teacher (គរុនិស្សិត) — Primary School (12+4)</p>
+                <p>Bachelor of Education (Year 2)</p>
+                <p
+                  style="
+                    opacity: 0.55;
+                    font-size: 0.82rem;
+                    font-family: var(--font-mono);
+                  "
+                >
+                  Mon-Fri Schedule · Expected Graduation: 2028
+                </p>
+              </div>
+              <div>
+                <p><strong><a href="https://khemarakuniversity.edu.kh/km" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">Khemarak University</a></strong></p>
+                <p>Bachelor of Mathematics (Year 3)</p>
+                <p
+                  style="
+                    opacity: 0.55;
+                    font-size: 0.82rem;
+                    font-family: var(--font-mono);
+                  "
+                >
+                  Sat-Sun Schedule · Expected: 2027
+                </p>
+              </div>
+              <div class="certs" style="margin-top: 1.5rem">
+                <div class="certs-head">
+                  <svg
+                    stroke="#22ff6e"
+                    fill="none"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="width: 18px; height: 18px"
+                  >
+                    <use href="#ico-chat" />
+                  </svg>
+                  <h4 style="font-size: 0.95rem">Languages</h4>
+                </div>
+                <div class="ci">
+                  <svg><use href="#ico-check" /></svg> Khmer (Mother Tongue)
+                </div>
+                <div class="ci">
+                  <svg><use href="#ico-check" /></svg> English (Intermediate)
+                </div>
+                <div class="ci">
+                  <svg><use href="#ico-check" /></svg> French (A1)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT col: profile photo -->
+          <div class="about-photo-col">
+            <div class="about-photo-wrap">
+              <!-- Fixed image path to be consistent for Ron Raksmey -->
+              <img src="image/Kemdethpf.png" onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&h=800&fit=crop'" alt="Ron Raksmey" class="about-photo" />
+              <div class="about-photo-glow" aria-hidden="true"></div>
+              <div class="about-photo-badge">
+                <span class="about-photo-dot" aria-hidden="true"></span>
+                Cotact us now!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ JOURNEY ═══ -->
+    <section id="journey" class="alt">
+      <div class="si">
+        <div class="sh">
+          <span class="s-label">// Experience &amp; Growth</span><br />
+          <h2 class="s-title">
+            My Journey
+            <svg
+              class="squig"
+              viewBox="0 0 200 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 10 C35 3, 65 14, 100 7 S165 2, 198 9"
+                stroke="#22ff6e"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </h2>
+        </div>
+        <div class="tl">
+          <div class="card tl-item">
+            <div class="tl-date">2023 — 2028</div>
+            <div class="tl-title">Student Teacher &amp; Mathematics Student</div>
+            <div class="tl-org">PTEC (Mon-Fri) &amp; Khemarak University (Sat-Sun)</div>
+            <p class="tl-desc">
+              Currently advancing my theoretical knowledge and pedagogical skills through a dual degree. I serve as a Year 2 Student Teacher (គរុនិស្សិត) for primary education (12+4) at Phnom Penh Teacher Education College during weekdays (graduating in 2028), while pursuing a Bachelor of Mathematics (Year 3) at Khemarak University on weekends.
+            </p>
+            <div class="tl-tags">
+              <span class="tl-tag">Primary Ed</span>
+              <span class="tl-tag">Mathematics</span>
+              <span class="tl-tag">12+4 System</span>
+            </div>
+          </div>
+          <div class="card tl-item">
+            <div class="tl-date">Experience</div>
+            <div class="tl-title">Primary School Teaching Practicum</div>
+            <div class="tl-org">សាលាបឋមសិក្សាអនុវត្តរាជធានី · Phnom Penh</div>
+            <p class="tl-desc">
+              Gained practical teaching experience at Capital Practice Primary School. Focused on delivering engaging foundational mathematics lessons and building a supportive learning environment for young primary school students.
+            </p>
+            <div class="tl-tags">
+              <span class="tl-tag">Primary Ed</span>
+              <span class="tl-tag">Practicum</span>
+              <span class="tl-tag">Mentoring</span>
+              <span class="tl-tag">Mathematics</span>
+            </div>
+          </div>
+          <div class="card tl-item">
+            <div class="tl-date">2023</div>
+            <div class="tl-title">High School Graduate</div>
+            <div class="tl-org">Cambodia Japan Friendship Middle and High School</div>
+            <p class="tl-desc">
+              Graduated with excellence, achieving an overall Grade 'A' in the National High School Diploma Examination (BacII) in the Science track, with top scores in Mathematics and Physics.
+            </p>
+            <div class="tl-tags">
+              <span class="tl-tag">Grade 'A'</span>
+              <span class="tl-tag">Science Track</span>
+              <span class="tl-tag">BacII</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills">
+      <div class="si">
+        <div class="sh">
+          <span class="s-label">// What I Know</span><br />
+          <h2 class="s-title">
+            Teaching &amp; Technical Skills
+            <svg
+              class="squig"
+              viewBox="0 0 200 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 10 C35 3, 65 14, 100 7 S165 2, 198 9"
+                stroke="#22ff6e"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </h2>
+        </div>
+        <div class="sk-grid">
+          <div class="card sk-card">
+            <div class="sk-head">
+              <div class="sk-icon">
+                <svg
+                  stroke="var(--neon)"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="#ico-book" />
+                </svg>
+              </div>
+              <h3>Subject Expertise</h3>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">General Mathematics</span><span class="sk-pct">95%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="95"></div>
+              </div>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">Algebra &amp; Geometry</span><span class="sk-pct">90%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="90"></div>
+              </div>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">Calculus &amp; Analysis</span><span class="sk-pct">85%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="85"></div>
+              </div>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">Physics &amp; Chemistry</span><span class="sk-pct">80%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="80"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card sk-card">
+            <div class="sk-head">
+              <div class="sk-icon">
+                <svg
+                  stroke="var(--neon)"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="#ico-wrench" />
+                </svg>
+              </div>
+              <h3>Digital Tools</h3>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">Microsoft Office Suite</span><span class="sk-pct">95%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="95"></div>
+              </div>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">Google Workspace</span><span class="sk-pct">90%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="90"></div>
+              </div>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">LaTeX Typesetting</span><span class="sk-pct">85%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="85"></div>
+              </div>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">Canva for Education</span><span class="sk-pct">88%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="88"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card sk-card">
+            <div class="sk-head">
+              <div class="sk-icon">
+                <svg
+                  stroke="var(--neon)"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="#ico-bolt" />
+                </svg>
+              </div>
+              <h3>Pedagogy</h3>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">Lesson Planning</span><span class="sk-pct">90%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="90"></div>
+              </div>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">Student Assessment</span><span class="sk-pct">85%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="85"></div>
+              </div>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">AI Tools for Education</span><span class="sk-pct">80%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="80"></div>
+              </div>
+            </div>
+            <div class="sk-row">
+              <div class="sk-meta">
+                <span class="sk-name">One-on-One Mentoring</span><span class="sk-pct">95%</span>
+              </div>
+              <div class="sk-track">
+                <div class="sk-fill" data-w="95"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card sk-card sk-soft">
+            <div class="sk-head">
+              <div class="sk-icon">
+                <svg
+                  stroke="var(--neon)"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="#ico-team" />
+                </svg>
+              </div>
+              <h3>Soft Skills</h3>
+            </div>
+            <div class="sk-soft-pills">
+              <span class="pill"><svg><use href="#ico-chat" /></svg> Communication</span>
+              <span class="pill"><svg><use href="#ico-target" /></svg> Patience</span>
+              <span class="pill"><svg><use href="#ico-clock" /></svg> Time Management</span>
+              <span class="pill"><svg><use href="#ico-check" /></svg> Problem Solving</span>
+              <span class="pill"><svg><use href="#ico-book" /></svg> Dedicated</span>
+              <span class="pill"><svg><use href="#ico-refresh" /></svg> Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ACADEMIC ACHIEVEMENTS — horizontal carousel ═══ -->
+    <section id="projects" class="alt">
+      <div class="si">
+        <div class="sh">
+          <span class="s-label">// Academic Focus</span><br />
+          <h2 class="s-title">
+            Achievements &amp; Experience
+            <svg
+              class="squig"
+              viewBox="0 0 200 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 10 C35 3, 65 14, 100 7 S165 2, 198 9"
+                stroke="#22ff6e"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </h2>
+        </div>
+
+        <!-- Carousel wrapper -->
+        <div class="pj-carousel-wrap">
+          <button
+            class="pj-nav pj-nav-prev"
+            id="pjPrev"
+            aria-label="Previous project"
+          >
+            <svg><use href="#ico-chevron-left" /></svg>
+          </button>
+          <button
+            class="pj-nav pj-nav-next"
+            id="pjNext"
+            aria-label="Next project"
+          >
+            <svg><use href="#ico-chevron-right" /></svg>
+          </button>
+
+          <div class="pj-track" id="pjTrack">
+            <!-- PROJECT 1 — Practicum Experience -->
+            <article class="card pj-card">
+              <div class="pj-img-wrap">
+                <img
+                  src="image/Teach3.jpg"
+                  alt="Primary School Teaching"
+                  loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="420"
+                />
+                <div class="pj-overlay" aria-hidden="true"></div>
+                <span class="pj-badge pj-badge-live">● Active</span>
+              </div>
+              <div class="pj-body">
+                <h3>
+                  Primary School Teaching Practicum
+                  <span class="pj-featured-tag">Experience</span>
+                </h3>
+                <p>
+                  Delivering practical, engaging lessons to young learners at <strong>Capital Practice Primary School (សាលាបឋមសិក្សាអនុវត្តរាជធានី)</strong>. Focusing on foundational mathematics and creating an enjoyable classroom environment.
+                </p>
+                <div class="pj-ch">
+                  <strong>Outcome:</strong> Successfully applying modern teaching methodologies to help young students grasp basic concepts while building their confidence from an early age.
+                </div>
+                <div class="ttags">
+                  <span class="ttag">Lesson Planning</span>
+                  <span class="ttag">Primary Math</span>
+                  <span class="ttag">Mentorship</span>
+                </div>
+                <div class="pj-links" style="margin-top: 1rem;">
+                  <a
+                    href="http://facebook.com/p/%E1%9E%9F%E1%9E%B6%E1%9E%9B%E1%9E%B6%E1%9E%94%E1%9E%8B%E1%9E%98%E1%9E%9F%E1%9E%B7%E1%9E%80%E1%9F%92%E1%9E%9F%E1%9E%B6%E1%9E%A2%E1%9E%93%E1%9E%BB%E1%9E%9C%E1%9E%8F%E1%9F%92%E1%9E%8F%E1%9E%9A%E1%9E%B6%E1%9E%87%E1%9E%92%E1%9E%B6%E1%9E%93%E1%9E%B8-%E1%9E%95%E1%9F%92%E1%9E%9B%E1%9E%BC%E1%9E%9C%E1%9E%80%E1%9E%B6%E1%9E%9A-61556742188736/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="pj-btn pj-live"
+                    ><svg><use href="#ico-external" /></svg> View School Page</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 2 — University GPA -->
+            <article class="card pj-card">
+              <div class="pj-img-wrap">
+                <img
+                  src="image/Teach.png"
+                  alt="University Academic Performance"
+                  loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="420"
+                />
+                <div class="pj-overlay" aria-hidden="true"></div>
+                <span class="pj-badge">Academic</span>
+              </div>
+              <div class="pj-body">
+                <h3>RUPP Top Academic Performance</h3>
+                <p>
+                  Achieved an outstanding Cumulative Grade Point Average of 3.79 out of 4.0 in the first semester as a Mathematics Major at the Royal University of Phnom Penh.
+                </p>
+                <div class="pj-ch">
+                  <strong>Highlights:</strong> Scored top marks (A) in General Analysis 1 (96%), General Chemistry (95%), and General Physics (95%).
+                </div>
+                <div class="pj-progress">
+                  <div class="pj-progress-label">
+                    <span>First Year GPA</span><span class="pj-progress-pct">95%</span>
+                  </div>
+                  <div class="pj-progress-track">
+                    <div class="pj-progress-fill" data-w="95"></div>
+                  </div>
+                </div>
+                <div class="ttags">
+                  <span class="ttag">Analysis</span>
+                  <span class="ttag">Chemistry</span>
+                  <span class="ttag">Physics</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 3 — BacII -->
+            <article class="card pj-card">
+              <div class="pj-img-wrap">
+                <img
+                  src="image/Teach2.png"
+                  alt="High School BacII Excellence"
+                  loading="lazy"
+                  decoding="async"
+                  width="800"
+                  height="420"
+                />
+                <div class="pj-overlay" aria-hidden="true"></div>
+                <span class="pj-badge">Graduated 2023</span>
+              </div>
+              <div class="pj-body">
+                <h3>BacII Grade 'A' Graduate</h3>
+                <p>
+                  Successfully passed the rigorous National High School Diploma Examination (BacII) with an overall Grade 'A', ranking at 99.734 percentile.
+                </p>
+                <div class="pj-ch">
+                  <strong>Subject mastery:</strong> Achieved an 'A' in Mathematics, Biology, Chemistry, and Physics.
+                </div>
+                <div class="pj-progress">
+                  <div class="pj-progress-label">
+                    <span>Overall Excellence</span><span class="pj-progress-pct">99%</span>
+                  </div>
+                  <div class="pj-progress-track">
+                    <div class="pj-progress-fill" data-w="99"></div>
+                  </div>
+                </div>
+                <div class="ttags">
+                  <span class="ttag">BacII</span>
+                  <span class="ttag">Science Track</span>
+                  <span class="ttag">Excellence</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- end pj-track -->
+
+          <!-- Dots indicator -->
+          <div
+            class="pj-dots"
+            id="pjDots"
+            aria-label="Project navigation"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS & REFERENCES ═══ -->
+    <section id="testimonials">
+      <div class="si">
+        <div class="sh">
+          <span class="s-label">// Professional Network</span><br />
+          <h2 class="s-title">
+            References
+            <svg
+              class="squig"
+              viewBox="0 0 200 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 10 C35 3, 65 14, 100 7 S165 2, 198 9"
+                stroke="#22ff6e"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </h2>
+        </div>
+        <div class="ts-grid">
+          <div class="card ts-card">
+            <div class="ts-q" aria-hidden="true">"</div>
+            <div class="ts-stars" aria-label="5 stars">
+              <span class="ts-star">★</span><span class="ts-star">★</span
+              ><span class="ts-star">★</span><span class="ts-star">★</span
+              ><span class="ts-star">★</span>
+            </div>
+            <p class="ts-text">
+              Ron is an incredibly dedicated individual. His deep understanding of mathematics and passion for sharing knowledge makes him an excellent educator.
+            </p>
+            <div class="ts-footer">
+              <div class="ts-avatar ts-avatar-initials">RS</div>
+              <div>
+                <p class="ts-author">Ron Saroeun</p>
+                <p class="ts-role">Web Developer, Wing Bank</p>
+                <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 2px;">+855-88-916-2788</p>
+              </div>
+            </div>
+          </div>
+          <div class="card ts-card">
+            <div class="ts-q" aria-hidden="true">"</div>
+            <div class="ts-stars" aria-label="5 stars">
+              <span class="ts-star">★</span><span class="ts-star">★</span
+              ><span class="ts-star">★</span><span class="ts-star">★</span
+              ><span class="ts-star">★</span>
+            </div>
+            <p class="ts-text">
+              Working with Ron is a great experience. He is a strong communicator and always patient when explaining complex mathematical concepts to his students.
+            </p>
+            <div class="ts-footer">
+              <div class="ts-avatar ts-avatar-initials">SN</div>
+              <div>
+                <p class="ts-author">Sophea Nguon</p>
+                <p class="ts-role">Classmate &amp; Project Partner</p>
+              </div>
+            </div>
+          </div>
+          <div class="card ts-card">
+            <div class="ts-q" aria-hidden="true">"</div>
+            <div class="ts-stars" aria-label="5 stars">
+              <span class="ts-star">★</span><span class="ts-star">★</span
+              ><span class="ts-star">★</span><span class="ts-star">★</span
+              ><span class="ts-star">★</span>
+            </div>
+            <p class="ts-text">
+              Ron's ability to quickly learn and implement new pedagogical tools like AI and LaTeX is impressive. His lesson plans are always clean, easy to follow, and effective.
+            </p>
+            <div class="ts-footer">
+              <div class="ts-avatar ts-avatar-initials">RP</div>
+              <div>
+                <p class="ts-author">Raksa Pov</p>
+                <p class="ts-role">Study Group Leader</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact" class="alt">
+      <div class="si" style="max-width: 960px">
+        <div class="sh">
+          <span class="s-label">// Let's Talk</span><br />
+          <h2 class="s-title">
+            Get In Touch
+            <svg
+              class="squig"
+              viewBox="0 0 200 14"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M2 10 C35 3, 65 14, 100 7 S165 2, 198 9"
+                stroke="#22ff6e"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </h2>
+        </div>
+        <div class="ct-grid">
+          <!-- RIGHT — info first in DOM for alignment reference -->
+          <div class="ct-info">
+            <h3>Say hello</h3>
+            <p>
+              I'm actively seeking teaching opportunities and professional collaborations. If you want to discuss modern education methodologies — I'd love to connect.
+            </p>
+            <a href="mailto:raksmeyron97@gmail.com" class="cl">
+              <div class="cl-ico">
+                <svg
+                  stroke="var(--neon)"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <use href="#ico-mail" />
+                </svg>
+              </div>
+              <div class="cl-text">
+                <strong>Email</strong><span>raksmeyron97@gmail.com</span>
+              </div>
+            </a>
+            <a
+              href="https://t.me/Ron_Raksmey"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cl"
+            >
+              <div class="cl-ico">
+                <svg fill="var(--neon)" stroke="none">
+                  <use href="#ico-telegram" />
+                </svg>
+              </div>
+              <div class="cl-text">
+                <strong>Telegram</strong><span>@Ron_Raksmey</span>
+              </div>
+            </a>
+            <a
+              href="https://t.me/Ron_Raksmey"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cl"
+            >
+              <div class="cl-ico">
+                <svg fill="var(--neon)" stroke="none">
+                  <use href="#ico-facebook" />
+                </svg>
+              </div>
+              <div class="cl-text">
+                <!-- User requested: Change LinkedIn to Facebook: https://t.me/Ron_Raksmey -->
+                <strong>Facebook</strong><span>@Ron_Raksmey</span>
+              </div>
+            </a>
+            <div class="avail">
+              <div class="avail-dot" aria-hidden="true"></div>
+              <div class="avail-text">
+                <strong>Open to Opportunities</strong>
+                <p>
+                  Teaching &amp; educational roles. Based in Phnom Penh, Cambodia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEFT — form aligned to info -->
+          <form class="ct-form" id="ctForm" action="#" method="POST" novalidate>
+            <div class="fg">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jane Smith"
+                required
+                aria-required="true"
+                autocomplete="name"
+              />
+            </div>
+            <div class="fg">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@example.com"
+                required
+                aria-required="true"
+                autocomplete="email"
+              />
+            </div>
+            <div class="fg">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Hi Ron, I'd love to chat about..."
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button type="submit" class="sub-btn">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <use href="#ico-send" />
+              </svg>
+              Send Message
+            </button>
+            <div class="f-msg" id="fMsg" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+      <p>
+        © <span id="yr"></span> <strong>Ron Raksmey</strong> · Primary School Educator ·
+        <a href="mailto:raksmeyron97@gmail.com">raksmeyron97@gmail.com</a>
+      </p>
+    </footer>
+
+    <button class="b2t" id="b2t" aria-label="Scroll back to top">
+      <svg><use href="#ico-up" /></svg>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
